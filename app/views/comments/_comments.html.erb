@@ -1,0 +1,4 @@
+<div class="comment">
+  <div class="time"><%= time_ago_in_words(comments.created_at) + " ago" %></div>
+  <div class="author"><%= comments.user.name %> said... <span class="body"><%= comments.comment %></span></div>
+</div>

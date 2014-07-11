@@ -1,0 +1,9 @@
+<%= form_for([:post, @comment ], html: { class: "comment-form"}) do |f| %>
+  <% f.object.errors.full_messages.each do |error| %>
+    <div class="errors">
+      <%= error %>
+    </div>
+  <% end %>
+  <%= f.text_area :comment %>
+  <%= f.submit "Add Comment" %>
+<% end %>

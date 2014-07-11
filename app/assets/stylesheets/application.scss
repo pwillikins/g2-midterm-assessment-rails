@@ -79,6 +79,7 @@ header {
   margin-bottom: 2em;
 }
 
+
 .post {
 
   padding: 1em 0;
@@ -94,5 +95,39 @@ header {
   .time {
     color: #999;
     float: right;
+  }
+}
+
+.comment_link {
+  text-align: right
+}
+
+.comment {
+  width: 90%;
+  align: right;
+  margin-left: auto;
+  margin-bottom: 1%;
+  background: #DADADA;
+  padding: 1em 0;
+  & + & {
+    border: 1px solid #ccc;
+  }
+
+  .body {
+    font-size: 16px;
+    font-family: Georgia, Times, serif;
+  }
+
+  .time {
+    color: #999;
+    float: right;
+  }
+}
+
+.comment-form {
+  textarea {
+    width: 100%;
+    height: 3em;
+    margin-top: 25%;
   }
 }

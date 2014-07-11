@@ -2,4 +2,6 @@
   <div class="time"><%= time_ago_in_words(post.created_at) + " ago" %></div>
   <div class="author"><%= post.user.name %> said...</div>
   <span class="body"><%= post.body %></span>
+  <%= render partial: 'comments/comments', collection: post.comments %>
+  <div class="comment_link"><%= link_to "Add Comment", new_post_comment_path(post_id: post.id) %></div>
 </div>
